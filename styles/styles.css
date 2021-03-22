@@ -88,7 +88,6 @@ nav.black .logo-container,
 .hero .content h1{font-size: 4em;margin-bottom: 0.1em;text-transform: none;font-weight: 400;}
 .hero .typewrite .wrap{border-right: .05em solid;animation: caret 1s steps(1) infinite;}
 
-
 /*
 	services
 */
@@ -133,11 +132,13 @@ nav.black .logo-container,
 */
 #team .container{max-width: 1270px;padding: 0 20px;}
 #team .title-container{margin-bottom: 3em;}
-#team .team-container{justify-content: space-between;max-width: 850px;margin: 3.5em auto 3em;}
+#team .team-container{justify-content: space-between;max-width: 1100px;margin: 3.5em auto 3em;}
 #team .team-container .member{width: 310px;max-width: 100%;}
+#team .team-container .member:nth-child(2){margin: 0 1em;}
 #team .team-container .member .image-container{background-size: cover;background-position: center;background-repeat: no-repeat;padding-top: 110%;margin-bottom: 1em;}
-#team .team-container .member:nth-child(1) .image-container{background-image: url("../assets/images/lucas.jpg");}
-#team .team-container .member:nth-child(2) .image-container{background-image: url("../assets/images/mati.jpg");}
+#team .team-container .member .image-container.lucas{background-image: url("../assets/images/lucas.jpg");}
+#team .team-container .member .image-container.estefania{background-image: url("../assets/images/estefi.jpg");}
+#team .team-container .member .image-container.matias{background-image: url("../assets/images/mati.jpg");}
 #team .team-container .member .name{margin: 0.7em 0;font-weight: 600;}
 #team .team-container .member .role,
 #team .team-container .member .description{font-size: 0.9em;color: #9e9e9e;}
@@ -262,7 +263,8 @@ footer svg rect{fill: #fff!important;}
 	#team .title-container{margin-bottom: 2em;}
 	#team .team-container{margin: 2em auto;}
 	#team .team-container .member{width: 250px;}
-	#team .team-container .member:nth-child(1){margin-bottom: 2em;}
+	#team .team-container .member:nth-child(2){margin: auto;}
+	#team .team-container .member:not(:last-child){margin-bottom: 2em;}
 
 	/*faqs*/
 	#faqs .container{margin: 2em auto;}

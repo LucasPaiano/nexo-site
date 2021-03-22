@@ -50,7 +50,7 @@ class Mailer{
         //  'Reply-To: "' . $this->_params['name'] . '" <' . $this->_params['email'] . ">\r\n" .
             'X-Mailer: PHP/' . phpversion();
 
-        $subject	= "Message from the bike tours";
+        $subject	= "Message from nexo.site";
 		$message="\n\n  Nombre: ".$this->_params['name']."\n\n  Email: ".$this->_params['email']."\n\n  Mensaje: ".$this->_params['message'];
 
         $to = TO_EMAIL;
